@@ -6,9 +6,11 @@ import NavLink from "../Components/NavLink.vue";
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
             <div class="container">
+                <!-- NavLinks -->
                 <NavLink
                     routeName="home"
                     class="text-decoration-none text-white"
+                    componentName="Home"
                     >Home
                 </NavLink>
                 <button
@@ -26,7 +28,15 @@ import NavLink from "../Components/NavLink.vue";
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul
+                        class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center"
+                    >
+                        <NavLink
+                            routeName="register"
+                            class="text-decoration-none text-white mx-3"
+                            componentName="Auth/Register"
+                            >Register
+                        </NavLink>
                         <li class="nav-item">
                             <button
                                 class="btn btn-outline-light border-0 rounded-circle"
